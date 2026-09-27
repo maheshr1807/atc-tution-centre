@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Tamil:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
+    background-color: #FFF8E8;
+    color: #063B4C;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #063B4C;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #D6A928;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .tamil-text {
+    font-family: 'Noto Sans Tamil', sans-serif;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-3;
+  }
+
+  .section-subtitle {
+    @apply text-base md:text-lg opacity-80 mb-10;
+  }
+
+  .btn-primary {
+    @apply bg-gold text-navy font-bold px-6 py-3 rounded-full transition-all duration-300 hover:bg-gold-light hover:shadow-lg hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:bg-white hover:text-navy hover:shadow-lg active:scale-95;
+  }
+
+  .btn-teal {
+    @apply bg-teal text-white font-bold px-6 py-3 rounded-full transition-all duration-300 hover:bg-teal-light hover:shadow-lg hover:scale-105 active:scale-95;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .card-navy {
+    @apply bg-navy-700 rounded-2xl shadow-lg p-6 text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #D6A928, #e8c04a, #D6A928);
+    background-size: 200% auto;
+  }
+
+  .navy-gradient {
+    background: linear-gradient(135deg, #063B4C 0%, #087F8C 100%);
+  }
+
+  .teal-gradient {
+    background: linear-gradient(135deg, #087F8C 0%, #063B4C 100%);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    @apply rounded-2xl p-6;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold;
+  }
+
+  .nav-link {
+    @apply text-white/80 hover:text-gold transition-colors duration-200 font-medium text-sm tracking-wide;
+  }
+
+  .stat-number {
+    @apply text-4xl md:text-5xl font-black text-gold;
+  }
+
+  .stat-label {
+    @apply text-sm md:text-base font-semibold opacity-80 mt-1;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-500 { animation-delay: 0.5s; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Particle dots pattern */
+.dots-pattern {
+  background-image: radial-gradient(circle, rgba(214, 169, 40, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Nav transparent to solid */
+.nav-scrolled {
+  background: rgba(6, 59, 76, 0.98) !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* Pulse ring for WhatsApp */
+@keyframes ping-slow {
+  0% { transform: scale(1); opacity: 0.8; }
+  70% { transform: scale(1.5); opacity: 0; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.ping-slow {
+  animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Course card hover gradient */
+.course-card:hover .course-icon {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+.course-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Progress bar fill */
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: var(--fill); }
+}
+
+.fill-bar {
+  animation: fillBar 1.5s ease-out forwards;
+}
