@@ -75,8 +75,7 @@ export default function About() {
 
             <div className="reveal-item" style={{ opacity: 0, transform: 'translateY(20px)', transition: 'all 0.6s ease 0.3s' }}>
               <p className="text-navy/80 text-base md:text-lg leading-relaxed">
-                Sri Annai Tutorial College <strong>(Sri A.T.C)</strong> is dedicated to providing focused academic
-                coaching and exam-oriented training for students. Our approach combines experienced teaching,
+                Sri Annai Tutorial College <strong>(ATC)</strong> is a tuition centre located in Arasaradi, Madurai, providing tuition and academic support for students. Our approach combines experienced teaching,
                 individual attention, regular assessments and easy-to-understand study materials to help
                 students improve their academic performance.
               </p>
