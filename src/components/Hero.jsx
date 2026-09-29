@@ -61,16 +61,13 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-white font-black leading-none text-shadow-lg">
-            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight">
-              SRI ANNAI
+            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight">
+              Sri Annai Tutorial College
             </span>
-            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest text-gold mt-1">
-              TUTORIAL COLLEGE
+            <span className="block text-2xl sm:text-3xl md:text-4xl tracking-widest text-gold mt-2">
+              – Tuition Centre in Madurai
             </span>
           </h1>
-          <p className="text-white/60 text-sm sm:text-base mt-2 font-medium tracking-widest uppercase">
-            Sri A.T.C Tuition Centre
-          </p>
         </div>
 
         {/* Tamil Subtitle */}

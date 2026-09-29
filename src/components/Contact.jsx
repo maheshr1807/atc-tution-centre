@@ -104,7 +104,7 @@ export default function Contact() {
           </div>
           <div className="contact-reveal" style={{ opacity: 0, transform: 'translateY(20px)', transition: 'all 0.6s ease 0.1s' }}>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-navy mb-2">
-              Visit <span className="text-teal">Sri Annai</span> Tutorial College
+              Contact <span className="text-teal">Us</span>
             </h2>
             <p className="tamil-text text-navy/60 text-base">எங்களை தொடர்பு கொள்ளுங்கள்</p>
           </div>

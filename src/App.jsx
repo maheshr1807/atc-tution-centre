@@ -6,6 +6,7 @@ import Features from './components/Features';
 import WhyUs from './components/WhyUs';
 import Achievements from './components/Achievements';
 import Gallery from './components/Gallery';
+import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppFAB from './components/WhatsAppFAB';
@@ -22,6 +23,7 @@ function App() {
         <WhyUs />
         <Achievements />
         <Gallery />
+        <FAQ />
         <Contact />
       </main>
       <Footer />

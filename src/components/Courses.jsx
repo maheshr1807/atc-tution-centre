@@ -125,7 +125,7 @@ export default function Courses() {
           </div>
           <div className="course-reveal" style={{ opacity: 0, transform: 'translateY(20px)', transition: 'all 0.6s ease 0.1s' }}>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-3">
-              Our <span className="text-gold">Courses</span>
+              Tuition <span className="text-gold">Classes</span>
             </h2>
             <p className="tamil-text text-white/60 text-base">எங்கள் பாடங்கள் மற்றும் பயிற்சிகள்</p>
           </div>

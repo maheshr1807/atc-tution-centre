@@ -101,8 +101,7 @@ export default function WhyUs() {
             </div>
             <div className="why-reveal" style={{ opacity: 0, transform: 'translateY(20px)', transition: 'all 0.6s ease 0.1s' }}>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
-                Our <span className="text-gold">Goal</span> is Your
-                <span className="text-teal"> Achievement</span>
+                Why Choose <span className="text-gold">Sri Annai Tutorial College?</span>
               </h2>
               <p className="text-white/60 text-base max-w-2xl mx-auto mt-4">
                 We focus on helping every student understand concepts clearly, improve confidence and prepare effectively for examinations.
@@ -146,7 +145,7 @@ export default function WhyUs() {
             </div>
             <div className="method-reveal" style={{ opacity: 0, transform: 'translateY(20px)', transition: 'all 0.6s ease 0.1s' }}>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-navy mb-2">
-                How We <span className="text-teal">Help Students</span>
+                Our <span className="text-teal">Teaching Approach</span>
               </h2>
               <p className="tamil-text text-navy/60 text-base">நாங்கள் மாணவர்களுக்கு எவ்வாறு உதவுகிறோம்</p>
             </div>

@@ -90,7 +90,7 @@ export default function Achievements() {
           </div>
           <div className="achieve-reveal" style={{ opacity: 0, transform: 'translateY(20px)', transition: 'all 0.6s ease 0.1s' }}>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-navy mb-2">
-              Our Students' <span className="text-gold">Achievements</span>
+              Student <span className="text-gold">Achievements</span>
             </h2>
             <p className="tamil-text text-navy/60 text-base">எங்கள் மாணவர்களின் சாதனைகள்</p>
           </div>
